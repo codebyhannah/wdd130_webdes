@@ -1,0 +1,26 @@
+body {
+    margin: 25px;
+    text-align: center;
+    background-color: antiquewhite;
+    /*font-family:*/
+}
+
+img {
+        width:45%;
+    }
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+span {
+    font-style: italic;
+}
