@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    color: white;
+    background-color: #fba4cb;
+    margin: 30px 160px;
+    font-family: Arial, Helvetica, sans-serif;    font-size: 16px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h1:hover {
+    color: black;
+}
+
+img {
+    width: 160px;
+}
+
+ol {
+    text-align: left;
+    color: black;
+    font-weight:bold;
+    padding-inline-start: 25px;
+    line-height: 2rem;
+}
+
+.quote {
+    font-family: serif, 'Times New Roman', Times;
+}
+
+.quote_source {
+    font-weight: bold;
+}
+
+.tiny {
+    font-size: 14px;
+}
+
+.big {
+    font-size: 35px;
+    width: 290px;
+    margin: 30px auto;
+}
+
+footer {
+    color: black;
+}
