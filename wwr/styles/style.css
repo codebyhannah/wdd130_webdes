@@ -244,7 +244,7 @@ footer .social img {
     header{
         background-color: #227C9D;
     }
-    #hero, .homegrid {
+    #hero, main.home-grid {
         display: block;
         height: auto;
     }
