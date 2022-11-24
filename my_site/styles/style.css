@@ -91,7 +91,7 @@ h1, h2, h3, h4 {
     color: #4DCCBD;
 }
 
-.box h1, h2, h3, h4 {
+.box h1, .box h2, .box h3, .box h4 {
     color: #3C3C3B;
 }
 
@@ -102,9 +102,7 @@ h1, h2, h3, h4 {
 .box {
     background-color: #F5F5F5;
     color: #3C3C3B;
-    /*width: fit-content;*/
     width: 70%;
-    /*max-width: 70%;*/
     padding: 20px;
     border-radius: 15px;
     margin: auto;
@@ -155,7 +153,7 @@ footer .social img {
 
 img.me {
     border-radius: 15px;
-    /*drop-*/
+    filter: drop-shadow(-10px 10px 15px #4dccbd);
 }
 
 .home_grid {
@@ -173,6 +171,7 @@ img.me {
     font-size: 20px;
     height: 180%;
     width: 100%;
+    box-shadow: -20px 20px 50px #000000;
 }
 
 img.me.me1 {
@@ -226,6 +225,45 @@ img.me.me2 {
     max-width: 140%;
     max-height: 70%;
     margin-left: 25%;
+}
+
+/* Blog stuff */
+
+.box.blog {
+    text-align: left;
+    width: fit-content;
+    max-width: 50%;
+    box-shadow: -10px 10px 30px #000000;
+    padding-top: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+}
+
+.box h3 {
+    font-size: 20px;
+}
+
+img.coco {
+    position: relative;
+    top: -50px;
+    float: right;
+    width: 40%;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+img.flowers {
+    width: 70%;
+    border-radius: 15px;
+    margin: auto;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.box.flowers {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 @media screen and (max-width: 900px) {
@@ -298,6 +336,45 @@ img.me.me2 {
         max-width: 140%;
         max-height: 70%;
         margin-left: 35%;
+    }
+
+    /* Blog stuff */
+
+    .box.blog {
+        text-align: left;
+        width: fit-content;
+        max-width: 85%;
+        box-shadow: -10px 10px 30px #000000;
+        padding-top: 5px;
+    }
+
+    .box h3 {
+        font-size: 20px;
+    }
+    
+    img.coco {
+        position: relative;
+        top: -50px;
+        float: right;
+        width: 50%;
+        border-radius: 15px;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    
+    img.flowers {
+        position: relative;
+        top: -50px;
+        float: right;
+        width: 50%;
+        border-radius: 15px;
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+
+    .box.flowers {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
