@@ -310,7 +310,154 @@ img.flowers {
     text-decoration: none;
 }
 
+/* Image Page Stuff */
+
+img.big_ver {
+    width: 70%;
+    border: 5px solid #3C3C3B;
+    filter: drop-shadow(0px 0px 15px #4dccbd);
+}
+
+.box.description {
+    box-sizing: border-box;
+    margin-top: 25px;
+    width: 70%;
+    box-shadow: -10px 10px 15px #000000;
+    text-align: left;
+}
+
+.description p {
+    margin: auto 20px;
+    margin-bottom: 20px;
+}
+
+.button-box{
+    background-color: #4dccbd;
+    border-radius: 5px;
+    width: fit-content;
+    box-shadow: -10px 10px 10px #000000;
+    margin: auto;
+    font-family: 'Monda', 'Oswald', sans-serif;
+}
+
+.button-box a {
+    color: #95F9E3;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main.image-page-grid {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+.img-title {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    font-size: 30px;
+}
+
+.big_ver {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    justify-self: center;
+    margin-top: 30px;
+}
+
+.description {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+.next ,.previous {
+    padding: 0;
+    margin: auto;
+    margin-top: 50vh;
+    position: sticky;
+    top: 250px
+}
+
+.previous {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-right: 45%;
+}
+
+.next {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    margin-left: 45%;
+}
+
+.next a , .previous a{
+    font-size: 30px;
+    font-family: 'Monda', 'Oswald', sans-serif;
+    text-decoration: none;
+    color: #95F9E3;
+}
+
+.next a div, .previous a div {
+    margin: 0;
+    padding: 5px 25px 7px 23px;
+    font-size: 25px;
+    line-height: 0;
+    position: sticky;
+    top: 250px
+}
+
+.next a div:hover,.previous a div:hover {
+    padding: 1px 27px 3px 25px;
+    background-color: #95F9E3;
+    font-size: 35px;
+    color: #4DCCBD;
+}
+
+.back-1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-left: 20px;
+}
+
+.back-2 {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    margin-top: 40px;
+    margin-left: 15%;
+}
+
+.back-1, .back-2 {
+    padding: 0;
+    height: fit-content;
+    width: fit-content;
+}
+
+.back {
+    padding: 5px 30px;
+    margin: 0;
+}
+
+.back-1 a, .back-2 a{
+    font-size: 20px;
+    color: #95F9E3;
+    text-decoration: none;
+}
+
+.back:hover {
+    background-color: #95F9E3;
+    padding: 5px 30px;
+}
+
+.back-1:hover a div, .back-2:hover a div{
+    font-size: 21px;
+    color: #4DCCBD;
+}
+
+.italics {
+    font-style: italic;
+}
+
 @media screen and (max-width: 900px) {
+
     .home_grid {
         display:grid;
         grid-template-columns: 1fr 1fr; 
@@ -431,6 +578,116 @@ img.flowers {
         margin: auto;
     }
 
+    /* Image Page Stuff*/
+
+    main.image-page-grid {
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+    }
+    
+    .img-title {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    
+    .big_ver {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        justify-self: center;
+        margin-top: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .description {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+    
+    .next ,.previous {
+        padding: 0;
+        margin: auto;
+        margin-top: 20vh;
+        position: sticky;
+        top: 250px
+    }
+    
+    .previous {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        margin-right: 45%;
+    }
+    
+    .next {
+        grid-column: 3/4;
+        grid-row: 2/4;
+        margin-left: 45%;
+    }
+    
+    .next a , .previous a{
+        font-size: 30px;
+        font-family: 'Monda', 'Oswald', sans-serif;
+        text-decoration: none;
+        color: #95F9E3;
+    }
+    
+    .next a div, .previous a div {
+        margin: 0;
+        padding: 1px 15px 1px 15px;
+        font-size: 20px;
+        line-height: 0;
+        position: sticky;
+        top: 250px
+    }
+    
+    .next a div:hover,.previous a div:hover {
+        padding: 1px 17px 1px 17px;
+        background-color: #95F9E3;
+        font-size: 25px;
+        color: #4DCCBD;
+    }
+    
+    .back-1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        margin-left: 20px;
+    }
+    
+    .back-2 {
+        grid-column: 1/4;
+        grid-row: 5/6;
+        margin-top: 40px;
+        margin-left: 15%;
+    }
+    
+    .back-1, .back-2 {
+        padding: 0;
+        height: fit-content;
+        width: fit-content;
+    }
+    
+    .back {
+        padding: 3px 20px;
+        margin: 0;
+    }
+
+    .back-1 a, .back-2 a{
+        font-size: 17px;
+        color: #95F9E3;
+        text-decoration: none;
+    }
+
+    .back:hover {
+        background-color: #95F9E3;
+        padding: 3px 20px;
+    }
+    
+    .back-1:hover a div, .back-2:hover a div{
+        font-size: 19px;
+        color: #4DCCBD;
+    }
 }
 
-/*gets weird at 478px and smaller, need to figure that out*/
+/*gets weird at 478px and smaller, need to figure that out
+    at 460 and smaller the logo needs to get smaller or it overlaps with the words
+*/
